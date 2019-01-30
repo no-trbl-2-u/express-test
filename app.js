@@ -1,4 +1,5 @@
 const express = require('express')
+const scores = require('./playData/scores.json')
 
 // Constants
 const PORT = 3000
@@ -6,7 +7,7 @@ const PORT = 3000
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Hello world\n')
+  res.send(scores)
 })
 
 app.listen(PORT, () => console.log(`Listening on PORT:${PORT}`))

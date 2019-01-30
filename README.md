@@ -15,7 +15,7 @@ Take the "URL" value (excluding the "p" val [:p]) and use that to access
 the opened port after running your docker container..
 
 *Within your dockerfile, you'll have a line that reads* ``` EXPOSE: ${PORT} ```
-*This is the open port you can use to access the express instance running inside your docker container*
+*This is the open port you can use to access the express instance running inside your docker container. So when ran, replace "p" with ${PORT}*
 
 
 
